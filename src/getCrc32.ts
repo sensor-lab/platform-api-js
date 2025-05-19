@@ -1,4 +1,7 @@
-export async function getCrc32(fn, external_url = undefined) {
+export async function getCrc32(
+  fn: string, // Filename as a string
+  external_url: string | undefined = undefined // Optional external URL
+): Promise<number | any> {
   let request = `/hardware/getcrc32?fn=${fn}`;
   if (external_url !== undefined) {
     request = external_url + request;
