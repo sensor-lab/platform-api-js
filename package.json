@@ -1,0 +1,15 @@
+{
+  "name": "sensorsparks.api",
+  "version": "0.1.0",
+  "description": "A bundle of sensor sparks api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "support@sensorsparks.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.8",
+    "parcel": "^2.15.1"
+  }
+}
