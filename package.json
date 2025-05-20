@@ -9,6 +9,7 @@
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build",
+    "lint-and-fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "targets": {
@@ -25,10 +26,17 @@
   "author": "support@sensorsparks.com",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.27.0",
     "@parcel/packager-ts": "^2.15.1",
     "@parcel/transformer-typescript-types": "^2.15.1",
     "@tsconfig/recommended": "^1.0.8",
+    "eslint": "^9.27.0",
     "parcel": "^2.15.1",
-    "typescript": "^5.8.3"
-  }
+    "pre-push": "^0.1.4",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1"
+  },
+  "pre-push": [
+    "lint-and-fix"
+  ]
 }

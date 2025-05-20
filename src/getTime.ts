@@ -4,19 +4,19 @@ interface TimeResponse {
 }
 
 export async function getTime(): Promise<any | -1> {
-  const request = "/hardware/timedate";
-  try {
-    const response = await fetch(request, {
-      method: "get",
-    });
-    const ret: TimeResponse = await response.json();
-    if (!ret.hasOwnProperty("errorcode")) {
-      return ret.value;
-    } else {
-      return -1;
+    const request = "/hardware/timedate";
+    try {
+        const response = await fetch(request, {
+            method: "get",
+        });
+        const ret: TimeResponse = await response.json();
+        if (!Object.prototype.hasOwnProperty.call(ret, "errorcode")) {
+            return ret.value;
+        } else {
+            return -1;
+        }
+    } catch (error) {
+        console.log("Error call API:", error);
     }
-  } catch (error) {
-    console.log("Error call API:", error);
-  }
-  return -1;
+    return -1;
 }
