@@ -1,7 +1,7 @@
 {
   "name": "sensorsparks.api",
   "version": "0.1.0",
-  "description": "A bundle of sensor sparks api",
+  "description": "A JavaScript library for interacting with the SensorSparks platform",
   "source": "index.ts",
   "main": "dist/main.js",
   "module": "dist/module.js",
