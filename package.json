@@ -25,6 +25,10 @@
   ],
   "author": "support@sensorsparks.com",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sensor-lab/platform-api-js.git"
+  },
   "devDependencies": {
     "@eslint/js": "^9.27.0",
     "@parcel/packager-ts": "^2.15.1",
