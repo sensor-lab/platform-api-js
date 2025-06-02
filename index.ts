@@ -29,3 +29,4 @@ export * from "./src/startAdvanceOutput";
 export * from "./src/syncPwmReq";
 export * from "./src/uartHardwareOperation";
 export * from "./src/onewireHardwareOperation";
+export * from "./src/adcHardwareOperation";

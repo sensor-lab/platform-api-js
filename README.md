@@ -18,12 +18,19 @@ To build the library, use the following commands:
    ```
 2. Build the library:
    ```
-   npm build
+   npm run build
    ```
    The library target is built using [Parcel](https://parceljs.org/getting-started/library/).
 
 ### Development Workflow
 To link the library for local development, run:
-```
+
+```bash
 npm link
+```
+
+Run the following in consumer package to check linkage.
+
+```bash
+npm link sensorsparks.api
 ```
