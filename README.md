@@ -34,3 +34,17 @@ Run the following in consumer package to check linkage.
 ```bash
 npm link sensorsparks.api
 ```
+
+remove and show link:
+```bash
+npm rm sensorsparks.api
+npm ls sensorsparks.api
+```
+
+In case some wired issue happens in the consumer package, following commands are useful
+
+```bash
+rm -rf node_modules package-lock.json
+npm install
+npm link ../path-to-library
+```

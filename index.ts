@@ -2,6 +2,7 @@ export * from "./src/addReturnInformation";
 export * from "./src/advanceOutputSetupHardwareOperation";
 export * from "./src/advanceOutputStartHardwareOperation";
 export * from "./src/captureRegularHardwareOperation";
+export * from "./src/captureTriggerHardwareOperation";
 export * from "./src/constructNowEvent";
 export * from "./src/constructScheduleEvent";
 export * from "./src/delayHardwareOperation";
