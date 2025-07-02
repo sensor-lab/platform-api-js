@@ -31,3 +31,4 @@ export * from "./src/syncPwmReq";
 export * from "./src/uartHardwareOperation";
 export * from "./src/onewireHardwareOperation";
 export * from "./src/adcHardwareOperation";
+export * from "./src/i2sHardwareOperation";
