@@ -44,7 +44,7 @@ npm ls sensorsparks.api
 In case some wired issue happens in the consumer package, following commands are useful
 
 ```bash
-rm -rf node_modules package-lock.json
+rm -rf node_modules package-lock.json .parcel-cache dist
 npm install
 npm link ../path-to-library
 ```
