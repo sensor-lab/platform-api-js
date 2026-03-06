@@ -1,6 +1,6 @@
 {
   "name": "@sensorsparks/platform-api",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A JavaScript library for interacting with the SensorSparks platform",
   "source": "index.ts",
   "main": "dist/main.js",
