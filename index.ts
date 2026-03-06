@@ -32,3 +32,4 @@ export * from "./src/uartHardwareOperation";
 export * from "./src/onewireHardwareOperation";
 export * from "./src/adcHardwareOperation";
 export * from "./src/i2sHardwareOperation";
+export * from "./src/dvpHardwareOperation";
