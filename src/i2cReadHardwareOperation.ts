@@ -6,6 +6,7 @@ export function i2cReadHardwareOperation(
     device_addr: number | undefined, // Device address
     reg_addr1: number | undefined, // First register address
     reg_addr2: number = -1, // Second register address (optional, defaults to -1)
+    stop: boolean = true,   // Have stop signal at the end of transaction
     read_len: number = 0 // Length of data to read (optional, defaults to 0)
 ): number {
     let ret = 0;
@@ -35,6 +36,7 @@ export function i2cReadHardwareOperation(
             device_addr,
             reg_addr1,
             reg_addr2,
+            stop ? "stop":"nostop",
             read_len,
         ];
         opers.push(i2c_oper);

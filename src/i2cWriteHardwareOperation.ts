@@ -6,6 +6,7 @@ export function i2cWriteHardwareOperation(
     device_addr: number | undefined, // Device address
     reg_addr1: number | undefined, // First register address
     reg_addr2: number = -1, // Second register address (optional, defaults to -1)
+    stop: boolean = true,   // Have stop signal at the end of transaction
     ...write_data: number[] // Data to write as an array of numbers
 ): number {
     let ret = 0;
@@ -35,6 +36,7 @@ export function i2cWriteHardwareOperation(
             device_addr,
             reg_addr1,
             reg_addr2,
+            stop ? "stop":"nostop",
             write_data.length,
         ];
         i2c_oper = i2c_oper.concat(write_data);
